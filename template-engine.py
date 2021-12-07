@@ -36,6 +36,14 @@ example_template_3 = '''
 </ol> 
 '''
 
+# loop through a dictionary
+example_template_4 = '''
+<h1>For loops</h1>
+{%for name in ["name_1", "name_2"]%}
+    <h3>Hello, {{ name }}</h3>
+{%endloop%}
+'''
+
 loop = r'{%for.*?{%endloop%}'
 variable = r'{{.*}}'
 loop_value = r'for '
